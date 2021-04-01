@@ -1,0 +1,26 @@
+@import 'resets', 'variables', 'navbar', 'sidebar', 'dashboard', 'content', 'employees', 'login';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+    
+
+body{
+    background-color: var(--light-white);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Roboto';
+    display: flex;
+    //flex-wrap: wrap;
+    align-items: flex-start;
+    overflow-x: hidden;
+    scrollbar-color: var(--dark-grey-2) var(--light-grey-2);
+}
+
+@media (max-width: 600px){
+    .sidebar{
+        position: fixed;
+        transform: translate(-220px, 0);
+        
+    }
+}
+
