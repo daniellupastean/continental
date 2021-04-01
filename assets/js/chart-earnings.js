@@ -58,7 +58,7 @@ function drawStacked() {
         },
         series: {
             0: {
-                color: 'BF7651'
+                color: 'c19b76'
             },
             1: {
                 color: 'blue'

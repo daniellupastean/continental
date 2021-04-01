@@ -13,14 +13,14 @@ input {
 }
 
 :root {
-  --dark-caramel: #BF7651;
+  --dark-caramel: #c19b76;
   --pure-black: #1c1c1d;
   --light-white: #f8f8ff;
   --pure-white: #fff;
   --light-grey-1: #9c9c9c;
   --light-grey-2: #7c7c7c;
   --dark-grey-1: #5c5c5c;
-  --dark-grey-2: #3c3c3c;
+  --dark-grey-2: #2c2c2c;
 }
 
 .nav {
@@ -400,7 +400,7 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 56px 0px 0px 0px;
+  padding: 76px 0px 0px 0px;
   width: 100%;
   min-height: 100vh;
   transition: filter 0.2s;
@@ -507,20 +507,24 @@ input {
   color: var(--pure-white);
 }
 
+.login h1 {
+  font-weight: 300;
+}
+
 .login .box {
   width: 400px;
   padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(66, 43, 43, 0.4);
   text-align: center;
   border-radius: 10px;
   font-weight: 500;
 }
 
 .login .box input[type="email"], .login .box input[type="password"] {
-  border: 2px solid #0f0f0f;
+  border: 2px solid #030303;
   padding: 14px 10px;
   text-align: center;
   margin-top: 15px;
@@ -530,6 +534,7 @@ input {
   background: none;
   font-size: 18px;
   color: white;
+  z-index: 900;
 }
 
 .login .box input[type="submit"] {
@@ -543,6 +548,15 @@ input {
   cursor: pointer;
   color: var(--pure-white);
   font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  .login .box {
+    width: 85%;
+  }
+  .login .box input[type="email"], .login .box input[type="password"] {
+    width: 100%;
+  }
 }
 
 body {

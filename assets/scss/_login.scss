@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     color: var(--pure-white);
+
+    h1{
+        font-weight: 300;
+    }
     
     .box{
         width: 400px;
@@ -12,14 +16,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba($color: #fff, $alpha: 0.05);
+        background-color: rgba($color: #422b2b, $alpha: 0.4);
         text-align: center;
         border-radius: 10px;
         font-weight: 500;
         
+        
 
         input[type ="email"], input[type ="password"]{
-            border: 2px solid rgb(15, 15, 15);
+            border: 2px solid rgb(3, 3, 3);
             padding: 14px 10px;
             text-align: center;
             margin-top: 15px;
@@ -29,6 +34,7 @@
             background: none;
             font-size: 18px;
             color: white;
+            z-index: 900;
         }
 
         input[type = "submit"]{
@@ -42,6 +48,17 @@
             cursor: pointer;
             color: var(--pure-white);
             font-size: 18px;
+        }
+
+    }
+
+    @media (max-width: 500px){
+        .box{
+            width: 85%;
+            
+            input[type ="email"], input[type ="password"]{
+                width: 100%;
+            }
         }
 
     }
