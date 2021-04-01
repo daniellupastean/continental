@@ -350,12 +350,12 @@ input {
 }
 
 .dashboard .chart .chart-label {
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  font-weight: 300;
+  font-weight: 500;
   color: var(--pure-white);
   width: 100%;
   height: 70px;
