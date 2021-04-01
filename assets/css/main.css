@@ -88,7 +88,7 @@ input {
   justify-content: space-between;
   color: var(--light-grey-1);
   border: 2px solid var(--light-grey-1);
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .nav__center form {
@@ -108,6 +108,7 @@ input {
 }
 
 .nav__center__textbox {
+  letter-spacing: 1px;
   font-size: 1rem;
   font-weight: 500;
   width: 100%;
@@ -157,6 +158,7 @@ input {
 }
 
 .sidebar {
+  letter-spacing: 1px;
   padding: 86px 0 10px 0;
   background-color: var(--pure-white);
   width: 230px;
@@ -285,7 +287,6 @@ input {
   width: 20%;
   height: 90px;
   background-color: var(--pure-white);
-  border-radius: 10px;
   box-shadow: 2px 0 40px -25px;
 }
 
@@ -317,7 +318,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px 0px 0px 10px;
 }
 
 .dashboard .widget .data {
@@ -344,23 +344,23 @@ input {
   align-items: center;
   align-self: flex-start;
   margin: 30px 0 0 0;
-  border-radius: 10px;
   background-color: var(--pure-white);
   box-shadow: 2px 0 40px -25px;
+  letter-spacing: 0;
 }
 
 .dashboard .chart .chart-label {
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  font-weight: 500;
+  font-weight: 300;
   color: var(--pure-white);
   width: 100%;
   height: 70px;
   text-align: center;
   background-color: var(--dark-grey-2);
-  border-radius: 10px 10px 0px 0px;
   padding: 10px 10px 10px 10px;
 }
 
@@ -396,6 +396,7 @@ input {
 }
 
 .content {
+  letter-spacing: 1px;
   background-color: var(--light-white);
   display: flex;
   flex-direction: column;
@@ -416,6 +417,12 @@ input {
   box-shadow: 0px 2px 40px -18px;
 }
 
+@media (max-width: 1000px), (orientation: portrait) {
+  .content {
+    padding-top: 56px;
+  }
+}
+
 .employees {
   display: flex;
   align-items: flex-start;
@@ -423,7 +430,6 @@ input {
   justify-content: space-evenly;
   flex-wrap: wrap;
   background-color: var(--pure-white);
-  border-radius: 10px;
   box-shadow: 2px 0 40px -25px;
   width: 90%;
   margin: 30px auto 0 auto;
@@ -499,16 +505,18 @@ input {
 }
 
 .login {
-  background: var(--pure-black);
-  background: linear-gradient(to right, #1a120c, #000000);
+  background-color: var(--pure-black);
+  background: linear-gradient(to right, #2c2c2c, #050505);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--pure-white);
+  color: var(--dark-caramel);
+  letter-spacing: 1px;
 }
 
 .login h1 {
-  font-weight: 300;
+  font-weight: 500;
+  color: var(--dark-caramel);
 }
 
 .login .box {
@@ -517,23 +525,22 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(66, 43, 43, 0.4);
   text-align: center;
-  border-radius: 10px;
   font-weight: 500;
+  border: 2px solid var(--dark-caramel);
 }
 
 .login .box input[type="email"], .login .box input[type="password"] {
-  border: 2px solid #030303;
+  letter-spacing: 1px;
+  border: 2px solid var(--dark-caramel);
   padding: 14px 10px;
   text-align: center;
   margin-top: 15px;
   outline: none;
   width: 340px;
-  border-radius: 10px;
   background: none;
   font-size: 18px;
-  color: white;
+  color: var(--dark-caramel);
   z-index: 900;
 }
 
@@ -541,12 +548,13 @@ input {
   background-color: var(--dark-caramel);
   width: 100px;
   outline: none;
+  letter-spacing: 1px;
   border: none;
-  border-radius: 10px;
   margin-top: 15px;
   padding: 10px;
   cursor: pointer;
-  color: var(--pure-white);
+  color: var(--pure-black);
+  font-weight: 900;
   font-size: 18px;
 }
 

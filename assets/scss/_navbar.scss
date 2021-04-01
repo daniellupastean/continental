@@ -1,5 +1,6 @@
 .nav{
     background-color: var(--pure-black);
+    // background: linear-gradient(to right, #1c1c1c, #050505);
     height: 56px;
     width: 100%;
     position: fixed;
@@ -65,7 +66,7 @@
         justify-content: space-between;
         color: var(--light-grey-1);
         border: 2px solid var(--light-grey-1);
-        border-radius: 5px;
+        border-radius: 4px;
         form{
             width: 100%;
         }
@@ -83,6 +84,7 @@
         }
 
         &__textbox{
+            letter-spacing: 1px;
             font-size: 1rem;
             font-weight: 500;
             width: 100%;

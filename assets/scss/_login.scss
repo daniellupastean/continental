@@ -1,13 +1,18 @@
 .login{
-    background: var(--pure-black);
-    background: linear-gradient(to right, #1a120c, #000000);
+    // background: var(--pure-black);
+    // background: linear-gradient(to right, #1a120c, #000000);
+    background-color: var(--pure-black);
+    background: linear-gradient(to right, #2c2c2c, #050505);
+
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--pure-white);
+    color: var(--dark-caramel);
+    letter-spacing: 1px;
 
     h1{
-        font-weight: 300;
+        font-weight: 500;
+        color:var(--dark-caramel)
     }
     
     .box{
@@ -16,24 +21,26 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: rgba($color: #422b2b, $alpha: 0.4);
+        //background-color: rgba($color: #422b2b, $alpha: 0.4);
         text-align: center;
-        border-radius: 10px;
+        // border-radius: 10px;
         font-weight: 500;
+         border: 2px solid var(--dark-caramel);
         
         
 
         input[type ="email"], input[type ="password"]{
-            border: 2px solid rgb(3, 3, 3);
+            letter-spacing: 1px;
+            border: 2px solid var(--dark-caramel);
             padding: 14px 10px;
             text-align: center;
             margin-top: 15px;
             outline: none;
             width: 340px;
-            border-radius: 10px;
+            // border-radius: 10px;
             background: none;
             font-size: 18px;
-            color: white;
+            color: var(--dark-caramel);
             z-index: 900;
         }
 
@@ -41,12 +48,14 @@
             background-color: var(--dark-caramel);
             width: 100px;
             outline: none;
+            letter-spacing: 1px;
             border: none;
-            border-radius: 10px;
+            // border-radius: 10px;
             margin-top: 15px;
             padding: 10px;
             cursor: pointer;
-            color: var(--pure-white);
+            color: var(--pure-black);
+            font-weight: 900;
             font-size: 18px;
         }
 
