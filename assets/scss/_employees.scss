@@ -9,7 +9,7 @@
     box-shadow: 2px 0 40px -25px;
     width: 90%;
     margin: 30px auto 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
      hr{
         width: 100%;
         border: 0;
@@ -21,9 +21,12 @@
         width: 100%;
         color: var(--light-grey-2);
         font-weight: 500;
+
         .label{
             font-size: 20px;
-            padding: 20px 0 20px 30px;
+            letter-spacing: 1px;
+            padding: 40px 0 40px 0;
+            text-align: center;
         }
         .table-header{
             display: grid;
@@ -44,25 +47,9 @@
 
     .user{
         font-size: 25px;
+        color: var(--light-grey-2);
     }
 
-    &:nth-child(2n+0){
-        .user{
-            color: var(--dark-grey);
-        }
-        
-    }
-
-    &:nth-child(n+0){
-        
-        .user{
-            color: var(--dark-caramel);
-        }
-    }
-
-    .edit{
-        font-size: 16px;
-    }
 
     .name{
         font-weight: 700;
@@ -71,6 +58,33 @@
     .center{
         text-align: center;
     }
+
+    .editEmployeeBtn{
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        color: var(--dark-caramel);
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
+    .addEmployeeBtn{
+        background: none;
+        outline: none;
+        border: none;
+        font-size: 20px;
+        color: var(--dark-caramel);
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+
 
 
     @media (max-width: 900px){
@@ -82,6 +96,7 @@
         .table-row{
             grid-template-columns: 1fr;
             text-align: center;
+            line-height: 1.4;
         }
     }
 

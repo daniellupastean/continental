@@ -60,12 +60,13 @@
     &__center{
         display: flex;
         width: 40%;
-        height: 30px;
+        height: 34px;
         padding: 0 15px 0 15px;
         align-items: center;
         justify-content: space-between;
         color: var(--light-grey-1);
-        border: 2px solid var(--light-grey-1);
+        //border: 2px solid var(--light-grey-1);
+        background-color: #111;
         border-radius: 4px;
         form{
             width: 100%;
@@ -103,6 +104,9 @@
         a{
             color: var(--dark-caramel);
             padding: 15px 15px 15px 5px;
+            :hover{
+                opacity: 0.8;
+            }
         }
         
     }

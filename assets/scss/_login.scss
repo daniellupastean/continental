@@ -57,6 +57,9 @@
             color: var(--pure-black);
             font-weight: 900;
             font-size: 18px;
+            &:hover{
+                opacity: 0.8;
+            }
         }
 
     }
