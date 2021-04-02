@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="assets/js/chart-rooms.js"></script>
-    <script type="text/javascript" src="assets/js/chart-earnings.js"></script>
     <title>Contintental - Admin Panel</title>
 </head>
 
@@ -54,7 +51,7 @@
         <div class="sidebar__options">
             <ul>
 
-                <li class="actual">
+                <li>
                     <a href="dashboard.html">
                         <div class="selector"></div><i class="fas fa-th-large"></i>Dashboard
                     </a>
@@ -74,7 +71,7 @@
                         <div class="selector"></div><i class="far fa-calendar-alt"></i>Reservations
                     </a>
                 </li>
-                <li>
+                <li class="actual">
                     <a href="emails.html">
                         <div class="selector"></div><i class="fas fa-envelope"></i>Emails
                     </a>
@@ -83,59 +80,26 @@
         </div>
     </div>
 
-    <!-- CONTENT DASHBOARD START-->
+    <!-- CONTENT EMAILS START-->
+
     <div class="content">
-        <div class="dashboard">
-            <div class="widget">
-                <i class="fas fa-user-friends"></i>
-                <div class="data">
-                    <div class="label">Guest Users</div>
-                    <div class="value">512</div>
-                </div>
+        <div class="emails">
+            <div class="header">
+                <div class="label">SEND SPECIAL OFFER NEWSLETTER</div>
+                <hr>
             </div>
-            <div class="widget">
-                <i class="fas fa-users"></i>
-                <div class="data">
-                    <div class="label">Employees</div>
-                    <div class="value">28</div>
-                </div>
-            </div>
-            <div class="widget">
-                <i class="fas fa-door-open"></i>
-                <div class="data">
-                    <div class="label">Rooms</div>
-                    <div class="value">54</div>
-                </div>
-            </div>
-            <div class="widget">
-                <i class="fas fa-euro-sign"></i>
-                <div class="data">
-                    <div class="label">Today's Earnings</div>
-                    <div class="value">2K</div>
-                </div>
-            </div>
-
-
-            <div class="chart">
-                <div class="chart-label">Daily Rooms Occupancy</div>
-                <div id="chart-rooms"></div>
-            </div>
-            <div class="chart">
-                <div class="chart-label">Monthly Earnings (€)</div>
-                <div id="chart-earnings"></div>
-            </div>
-
-
+            <form action="emails.html" class="email-form">
+                <input class="subject" type="text" placeholder="Email subject..." spellcheck="false">
+                <textarea class="message" placeholder="Write the newsletter here..." spellcheck="false"></textarea>
+                <input class="send" type="submit" name="" value="Send">
+            </form>
 
         </div>
 
         <footer>Continental &copy; 2021</footer>
     </div>
 
-    <!-- CONTENT DASHBOARD END -->
-
-
-
+    <!-- CONTENT EMAILS END -->
 
 
     <script src="assets/js/main.js"></script>

@@ -731,6 +731,85 @@ input {
   }
 }
 
+.emails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--pure-white);
+  box-shadow: 2px 0 40px -25px;
+  width: 90%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 30px auto 0 auto;
+  padding-bottom: 40px;
+}
+
+.emails hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--light-grey-1), rgba(0, 0, 0, 0));
+}
+
+.emails .header {
+  width: 100%;
+}
+
+.emails .header .label {
+  color: var(--light-grey-2);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 40px 20px 40px 20px;
+  text-align: center;
+}
+
+.emails .email-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+}
+
+.emails .email-form input, .emails .email-form textarea {
+  font-family: 'Roboto';
+  border: none;
+  font-size: 18px;
+  background-color: #e9e9e9;
+  letter-spacing: 1px;
+  outline: none;
+  resize: vertical;
+  color: var(--dark-grey-2);
+  border-radius: 2pz;
+}
+
+.emails .email-form .subject, .emails .email-form .message {
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.emails .email-form .message {
+  min-height: 300px;
+  height: calc(100vh - 550px);
+  max-height: 600px;
+}
+
+.emails .email-form .send {
+  padding: 15px;
+  letter-spacing: 1px;
+  align-self: center;
+  width: 140px;
+  cursor: pointer;
+  background-color: var(--dark-caramel);
+  color: white;
+  font-weight: 500;
+}
+
+.emails .email-form .send:hover {
+  opacity: 0.8;
+}
+
 .login {
   background-color: var(--pure-black);
   background: linear-gradient(to right, #2c2c2c, #050505);
@@ -743,7 +822,8 @@ input {
 
 .login h1 {
   font-weight: 500;
-  color: var(--dark-caramel);
+  color: var(--pure-white);
+  margin-bottom: 5px;
 }
 
 .login .box {
@@ -754,12 +834,12 @@ input {
   align-items: center;
   text-align: center;
   font-weight: 500;
-  border: 2px solid var(--dark-caramel);
+  border: 2px solid var(--pure-white);
 }
 
 .login .box input[type="email"], .login .box input[type="password"] {
   letter-spacing: 1px;
-  border: 2px solid var(--dark-caramel);
+  border: 2px solid var(--pure-white);
   padding: 14px 10px;
   text-align: center;
   margin-top: 15px;
@@ -767,7 +847,7 @@ input {
   width: 340px;
   background: none;
   font-size: 18px;
-  color: var(--dark-caramel);
+  color: var(--pure-white);
   z-index: 900;
 }
 
@@ -777,11 +857,11 @@ input {
   outline: none;
   letter-spacing: 1px;
   border: none;
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 10px;
   cursor: pointer;
-  color: var(--pure-black);
-  font-weight: 900;
+  color: var(--pure-white);
+  font-weight: 500;
   font-size: 18px;
 }
 
