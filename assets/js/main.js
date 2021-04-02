@@ -18,4 +18,14 @@ menuBtn.addEventListener('click', () => {
     }
 });
 
+document.addEventListener('click', function (event) {
+    var isClickInside = sidebar.contains(event.target) || menuBtn.contains(event.target);
+
+    if (!isClickInside) {
+        menuBtn.classList.remove('open');
+        sidebar.classList.remove('shown');
+        content.style.filter = "brightness(100%)";
+        menuOpen = false;
+    }
+});
 

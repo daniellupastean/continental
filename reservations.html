@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="assets/js/chart-rooms.js"></script>
-    <script type="text/javascript" src="assets/js/chart-earnings.js"></script>
     <title>Contintental - Admin Panel</title>
 </head>
 
@@ -54,7 +51,7 @@
         <div class="sidebar__options">
             <ul>
 
-                <li class="actual">
+                <li>
                     <a href="dashboard.html">
                         <div class="selector"></div><i class="fas fa-th-large"></i>Dashboard
                     </a>
@@ -69,7 +66,7 @@
                         <div class="selector"></div><i class="fas fa-door-open"></i>Rooms
                     </a>
                 </li>
-                <li>
+                <li class="actual">
                     <a href="reservations.html">
                         <div class="selector"></div><i class="far fa-calendar-alt"></i>Reservations
                     </a>
@@ -83,59 +80,39 @@
         </div>
     </div>
 
-    <!-- CONTENT DASHBOARD START-->
+    <!-- CONTENT RESERVATIONS START-->
+
     <div class="content">
-        <div class="dashboard">
-            <div class="widget">
-                <i class="fas fa-user-friends"></i>
-                <div class="data">
-                    <div class="label">Guest Users</div>
-                    <div class="value">512</div>
+        <div class="reservations">
+            <div class="header">
+                <div class="label">RESERVATIONS DETAILS</div>
+                <hr>
+                <div class="table-header">
+                    <div class="parameter center"></div>
+                    <div class="parameter">NAME</div>
+                    <div class="parameter">ROOM</div>
+                    <div class="parameter">PRICE</div>
+                    <div class="parameter">DATE</div>
+                    <!-- <div class="parameter center add"><button class="addRoomBtn"><i
+                                class="fas fa-plus-circle"></i></button></div> -->
                 </div>
             </div>
-            <div class="widget">
-                <i class="fas fa-users"></i>
-                <div class="data">
-                    <div class="label">Employees</div>
-                    <div class="value">28</div>
-                </div>
+            <hr>
+            <div class="table-row">
+                <div class="value center user"><i class="fas fa-door-open"></i></div>
+                <div class="value  name">Andrei Bogdan</div>
+                <div class="value">Room 2.1</div>
+                <div class="value">€150</div>
+                <div class="value short">01.05.2021 - 02.05.2021</div>
+                <!-- <div class="value center edit"><button class="editRoomBtn"><i class="fas fa-pen"></i></button></div> -->
             </div>
-            <div class="widget">
-                <i class="fas fa-door-open"></i>
-                <div class="data">
-                    <div class="label">Rooms</div>
-                    <div class="value">54</div>
-                </div>
-            </div>
-            <div class="widget">
-                <i class="fas fa-euro-sign"></i>
-                <div class="data">
-                    <div class="label">Today's Earnings</div>
-                    <div class="value">2K</div>
-                </div>
-            </div>
-
-
-            <div class="chart">
-                <div class="chart-label">Daily Rooms Occupancy</div>
-                <div id="chart-rooms"></div>
-            </div>
-            <div class="chart">
-                <div class="chart-label">Monthly Earnings (€)</div>
-                <div id="chart-earnings"></div>
-            </div>
-
-
-
+            <hr>
         </div>
 
         <footer>Continental &copy; 2021</footer>
     </div>
 
-    <!-- CONTENT DASHBOARD END -->
-
-
-
+    <!-- CONTENT EMPLOYEES END -->
 
 
     <script src="assets/js/main.js"></script>

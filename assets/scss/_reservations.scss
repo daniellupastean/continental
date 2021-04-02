@@ -1,4 +1,4 @@
-.employees{
+.reservations{
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
@@ -32,7 +32,7 @@
         .table-header{
             display: grid;
             width: 100%;
-            grid-template-columns: 0.5fr 1fr 0.8fr 1fr 1.5fr 0.5fr;
+            grid-template-columns: 0.5fr 0.8fr 0.8fr 0.8fr 1fr;
             padding: 10px;
         }
 
@@ -40,10 +40,13 @@
     .table-row{
         display: grid;
         width: 100%;
-        grid-template-columns: 0.5fr 1fr 0.8fr 1fr 1.5fr 0.5fr;
+        grid-template-columns: 0.5fr 0.8fr 0.8fr 0.8fr 1fr;
         padding: 10px;
         color: var(--dark-grey-2);
         align-items: center;
+        .short{
+            letter-spacing: 0;
+        }
     }
 
     .user{
@@ -60,7 +63,7 @@
         text-align: center;
     }
 
-    .editEmployeeBtn{
+    .editRoomBtn{
         background: none;
         outline: none;
         border: none;
@@ -73,7 +76,7 @@
         }
     }
 
-    .addEmployeeBtn{
+    .addRoomBtn{
         background: none;
         outline: none;
         border: none;
