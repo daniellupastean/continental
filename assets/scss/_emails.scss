@@ -42,14 +42,21 @@
         input, textarea{
             font-family: 'Roboto';
             border: none;
-            font-size: 18px;
+            font-size: 15px;
             background-color: var(--light-white);
             letter-spacing: 1px;
             outline: none;
             resize: vertical;
             color: var(--dark-grey-2);
-            border-radius: 2pz;
+            border-radius: 2px;
+            border: 1px solid rgb(204, 204, 204);
+            &#myTextarea{
+                background-color: red;
+                // font-size: 18px;
+            }
         }
+
+        
 
         .subject, .message{
             margin-bottom: 30px;
@@ -73,6 +80,7 @@
             background-color: var(--dark-caramel);
             // color: var(--dark-grey-2);
             color: white;
+            font-size: 18px;
             font-weight: 500;
 
             &:hover{

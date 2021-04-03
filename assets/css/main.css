@@ -774,13 +774,18 @@ input {
 .emails .email-form input, .emails .email-form textarea {
   font-family: 'Roboto';
   border: none;
-  font-size: 18px;
+  font-size: 15px;
   background-color: var(--light-white);
   letter-spacing: 1px;
   outline: none;
   resize: vertical;
   color: var(--dark-grey-2);
-  border-radius: 2pz;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+}
+
+.emails .email-form input#myTextarea, .emails .email-form textarea#myTextarea {
+  background-color: red;
 }
 
 .emails .email-form .subject, .emails .email-form .message {
@@ -803,6 +808,7 @@ input {
   cursor: pointer;
   background-color: var(--dark-caramel);
   color: white;
+  font-size: 18px;
   font-weight: 500;
 }
 
