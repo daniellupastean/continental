@@ -457,7 +457,7 @@ input {
 }
 
 .employees .header .label {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 40px 0 40px 0;
@@ -650,7 +650,7 @@ input {
 }
 
 .rooms .header .label {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 40px 0 40px 0;
@@ -843,7 +843,7 @@ input {
 }
 
 .reservations .header .label {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 40px 0 40px 0;
@@ -949,7 +949,7 @@ input {
 
 .emails .header .label {
   color: var(--light-grey-2);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 1px;
   padding: 40px 20px 40px 20px;
