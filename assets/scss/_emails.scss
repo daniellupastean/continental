@@ -10,8 +10,9 @@
     box-sizing: border-box;
     margin: 30px auto 0 auto;
     padding-bottom: 40px;
+
      hr{
-        width: 100%;
+        width: 85%;
         border: 0;
         height: 1px;
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--light-grey-1), rgba(0, 0, 0, 0));
@@ -19,6 +20,9 @@
 
     .header{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .label{
             color: var(--light-grey-2);
@@ -61,8 +65,8 @@
 
         .message{
             min-height: 300px;
-            height: calc(100vh - 550px);
-            max-height: 600px;
+            height: calc(100vh - 530px);
+            // max-height: 600px;
         }
 
 
@@ -85,10 +89,23 @@
         }
     }
 
-    
+    @media (max-height: 800px){
+        margin-top: 10px;
+        padding-bottom: 30px;
 
-    @media (max-width: 900px){
-        
+        .header{
+            .label{
+                padding: 20px;
+            }
+        }
+
+        .email-form{
+            margin-top: 20px;
+            
+            .subject, .message{
+                margin-bottom: 20px;
+            }
+        }
     }
 
 }

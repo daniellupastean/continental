@@ -1,4 +1,4 @@
-@import 'resets', 'variables', 'navbar', 'sidebar', 'dashboard', 'content', 'employees', 'rooms', 'reservations', 'emails', 'login', 'scrollbar', 'edit-employee';
+@import 'resets', 'variables', 'navbar', 'sidebar', 'dashboard', 'content', 'employees', 'rooms', 'reservations', 'emails', 'login', 'scrollbar', 'edit-employee', 'edit-room';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 
@@ -45,6 +45,7 @@ body{
 
         h1{
             color: var(--dark-grey-1);
+            padding-bottom: 10px;
         }
 
         .element{
@@ -52,6 +53,7 @@ body{
             grid-template-columns: 3fr 4fr;
             align-items: center;
             margin-top: 20px;
+            width: 100%;
             
             
             // padding-left: 15px;
@@ -80,7 +82,7 @@ body{
 
         button{
             background-color: var(--dark-caramel);
-            width: 115px;
+            width: 42%;
             outline: none;
             letter-spacing: 1px;
             border: none;
@@ -96,16 +98,21 @@ body{
         }
 
         .settings_footer{
-            width: 415px;
+            width: 100%;
             // display: flex;
             // justify-content: center;
             display: flex;
             justify-content: space-between;
-            margin-top: 10px;
+            margin-top: 20px;
         }
 
         @media (max-height: 800px){
+            padding-top: 20px;
+                
             .element{
+                margin-top: 10px;
+            }
+            .settings_footer{
                 margin-top: 10px;
             }
         }

@@ -116,50 +116,53 @@
         </div>
     </div>
 
-    <!-- CONTENT EDIT-EMPLOYEE START-->
+    <!-- CONTENT EDIT-ROOM START-->
     <div class="content">
 
-        <!-- EDIT EMPLOYEE FORM -->
+        <!-- EDIT ROOM FORM -->
 
-        <form action="#" id="edit_employee_form">
-            <h1 class="edit_employee_header">EDIT EMPLOYEE ACCOUNT</h1>
+        <form action="#" id="edit_room_form">
+            <h1 class="edit_room_header">EDIT ROOM DETAILS</h1>
             <hr>
             <div class="element">
-                <label for="names">Name</label>
-                <input type="text" value="" spellcheck="false" placeholder="" id="names" required>
+                <label for="namer">Room Name</label>
+                <input type="text" value="" spellcheck="false" placeholder="" id="namer" required>
             </div>
             <div class="element">
-                <label for="position">Position</label>
-                <select name="positions" id="position">
-                    <option value="Manager">Manager</option>
-                    <option value="Administrator">Administrator</option>
-                    <option value="Accountant">Accountant</option>
-                    <option value="Housekeeper">Housekeeper</option>
+                <label for="type">Type</label>
+                <select name="types" id="type">
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Queen">Queen</option>
+                    <option value="Twin">Twin</option>
+                    <option value="Quad">Quad</option>
+                    <option value="King">King</option>
+                    <option value="Suite">Suite</option>
                 </select>
             </div>
             <div class="element">
-                <label for="phone">Phone</label>
-                <input type="tel" pattern="[\d\+]{10,15}" value="" spellcheck="false" placeholder="" id="phone"
+                <label for="price-night">Price/Night (€)</label>
+                <input type="text" pattern="[\d\.]{2,6}" value="" spellcheck="false" placeholder="" id="price-night"
                     required>
             </div>
             <div class="element">
-                <label for="emails">Email</label>
-                <input type="email" value="" spellcheck="false" placeholder="" id="emails" required>
-            </div>
-            <div class="element">
-                <label for="passwords">Password</label>
-                <input type="password" spellcheck="false" placeholder="" id="passwords" required>
+                <label for="status">Status</label>
+                <select name="statuses" id="status">
+                    <option value="Empty">Empty</option>
+                    <option value="Occupied">Occupied</option>
+                    <option value="Cleaning in progress">Cleaning in progress</option>
+                </select>
             </div>
             <hr>
-            <div class="edit_employee_footer">
+            <div class="edit_room_footer">
                 <!-- <button class="cancelBtn2" form="">Cancel</button> -->
-                <button type="update" form="edit_employee_form" value="Submit">Update</button>
+                <button type="update" form="edit_room_form" value="Submit">Update</button>
             </div>
         </form>
         <footer>Continental &copy; 2021</footer>
     </div>
 
-    <!-- CONTENT EDIT-EMPLOYEE END -->
+    <!-- CONTENT EDIT-ROOM END -->
 
 
     <script src="assets/js/main.js"></script>

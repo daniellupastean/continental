@@ -1,4 +1,4 @@
-#edit_employee_form{
+#edit_room_form{
     letter-spacing: 2px;
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@
         }
     }
 
-    .edit_employee_footer{
+    .edit_room_footer{
         width: 80%;
         display: flex;
         justify-content: center;
@@ -118,9 +118,8 @@
             margin-top: 10px;
         }
 
-        .edit_employee_footer{
-            margin-top: 20px;
-            margin-bottom: -10px;
+        .edit_room_footer{
+            margin-top: 30px;
         }
 
         h1{
