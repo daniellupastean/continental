@@ -100,10 +100,15 @@
 
     &__right{
         color: var(--dark-caramel);
-        font-size: 25px;
-        a{
+        
+        button, a{
+            background: none;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            font-size: 25px;
             color: var(--dark-caramel);
-            padding: 15px 15px 15px 5px;
+            margin: 15px 15px 15px 5px;
             :hover{
                 opacity: 0.8;
             }
@@ -125,19 +130,25 @@
 
         &__center{
             display: none;
+
         }
 
         &__right a{
-            padding-right: 5px;
+            padding-right: 0px;
+            
+            
+        }
+        .settings{
+            margin-right: 5px;
         }
 
         &__left{
             padding-left: 5px;
         }
 
-        .settings{
-            display: none;
-        }
+        // .settings{
+        //     display: none;
+        // }
 
         .logo1{
             display: none;

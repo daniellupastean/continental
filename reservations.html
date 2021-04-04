@@ -39,6 +39,31 @@
         </div>
     </div>
 
+    <!-- SETTINGS FORM -->
+    <div class="settings_form">
+        <form action="dashboard.html" id="modal_content">
+            <h1 class="settings_header">Account Settings</h1>
+            <div class="element">
+                <label for="name">Name</label>
+                <input type="text" value="Alex Popescu" spellcheck="false" placeholder="Enter new name here..."
+                    id="name">
+            </div>
+            <div class="element">
+                <label for="email">Email</label>
+                <input type="email" value="alex@contintental.com" spellcheck="false"
+                    placeholder="Enter new email here..." id="email">
+            </div>
+            <div class="element">
+                <label for="password">Password</label>
+                <input type="password" spellcheck="false" placeholder="Enter new password here..." id="password">
+            </div>
+            <div class="settings_footer">
+                <button class="cancelBtn" form="">Cancel</button>
+                <button type="update" form="modal_content" value="Submit">Update</button>
+            </div>
+        </form>
+    </div>
+
     <!-- SIDEBAR -->
     <div class="sidebar">
         <div class="sidebar__admin">

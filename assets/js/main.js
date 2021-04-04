@@ -29,3 +29,27 @@ document.addEventListener('click', function (event) {
     }
 });
 
+// SETTINGS FORM MODAL
+
+const settings_form = document.querySelector('.settings_form');
+const settingsBtn = document.querySelector('.settings');
+const cancelBtn = document.querySelector('.cancelBtn');
+
+
+settingsBtn.addEventListener('click', openSettings);
+cancelBtn.addEventListener('click', cancelSettings);
+window.addEventListener('click', clickOutsideSettings)
+
+function openSettings() {
+    settings_form.style.display = 'block';
+}
+
+function cancelSettings() {
+    settings_form.style.display = 'none';
+}
+
+function clickOutsideSettings(e) {
+    if (e.target == settings_form) {
+        settings_form.style.display = 'none';
+    }
+}
