@@ -1,4 +1,4 @@
-@import 'resets', 'variables', 'navbar', 'sidebar', 'dashboard', 'content', 'employees', 'rooms', 'reservations', 'emails', 'login', 'scrollbar';
+@import 'resets', 'variables', 'navbar', 'sidebar', 'dashboard', 'content', 'employees', 'rooms', 'reservations', 'emails', 'login', 'scrollbar', 'edit-employee';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 
@@ -103,7 +103,15 @@ body{
             justify-content: space-between;
             margin-top: 10px;
         }
+
+        @media (max-height: 800px){
+            .element{
+                margin-top: 10px;
+            }
+        }
     }
+
+   
 }
 
 
@@ -131,9 +139,6 @@ body{
             }
         }
     }
-}
-
-@media (min-height: 800px){
 }
 
 @keyframes modalopen{
