@@ -118,6 +118,47 @@
 
     <!-- CONTENT EMPLOYEES START-->
 
+    <!-- ADD EMPLOYEE FORM -->
+
+    <div class="add_room_form">
+        <form action="#" id="modal_content3">
+            <h1 class="add_room_header">Add Room</h1>
+            <div class="element">
+                <label for="namer">Name</label>
+                <input type="text" value="" spellcheck="false" placeholder="" id="namer" required>
+            </div>
+            <div class="element">
+                <label for="type">Type</label>
+                <select name="types" id="type">
+                    <option value="Single">Single</option>
+                    <option value="Double">Double</option>
+                    <option value="Queen">Queen</option>
+                    <option value="Twin">Twin</option>
+                    <option value="Quad">Quad</option>
+                    <option value="King">King</option>
+                    <option value="Suite">Suite</option>
+                </select>
+            </div>
+            <div class="element">
+                <label for="price-night">Price/Night (€)</label>
+                <input type="text" pattern="[\d\.]{2,6}" value="" spellcheck="false" placeholder="" id="price-night"
+                    required>
+            </div>
+            <div class="element">
+                <label for="status">Status</label>
+                <select name="statuses" id="status">
+                    <option value="Empty">Empty</option>
+                    <option value="Occupied">Occupied</option>
+                    <option value="Cleaning in progress">Cleaning in progress</option>
+                </select>
+            </div>
+            <div class="add_room_footer">
+                <button class="cancelBtn3" form="">Cancel</button>
+                <button type="update" form="modal_content3" value="Submit">Add</button>
+            </div>
+        </form>
+    </div>
+
     <div class="content">
         <div class="rooms">
             <div class="header">
@@ -151,6 +192,7 @@
     <!-- CONTENT EMPLOYEES END -->
 
 
+    <script src="assets/js/rooms.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
