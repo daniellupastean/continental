@@ -98,6 +98,9 @@
             grid-template-columns: 1fr;
             text-align: center;
             line-height: 1.4;
+            .editEmployeeBtn{
+                display: none;
+            }
         }
     }
 
