@@ -130,7 +130,7 @@ input {
   cursor: pointer;
   font-size: 25px;
   color: var(--dark-caramel);
-  margin: 15px 15px 15px 5px;
+  margin: 15px 15px 15px 10px;
 }
 
 .nav__right button :hover, .nav__right a :hover {
@@ -149,13 +149,13 @@ input {
     display: none;
   }
   .nav__right a {
-    padding-right: 0px;
-  }
-  .nav .settings {
-    margin-right: 5px;
+    padding-right: 5px;
   }
   .nav__left {
     padding-left: 5px;
+  }
+  .nav .settings {
+    display: none;
   }
   .nav .logo1 {
     display: none;
@@ -1029,7 +1029,7 @@ body {
 
 .settings_form #modal_content .element {
   display: grid;
-  grid-template-columns: 1.52fr 4fr;
+  grid-template-columns: 3fr 4fr;
   align-items: center;
   margin-top: 20px;
   background-color: var(--light-grey-1);

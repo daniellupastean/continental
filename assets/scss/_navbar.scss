@@ -108,7 +108,7 @@
             cursor: pointer;
             font-size: 25px;
             color: var(--dark-caramel);
-            margin: 15px 15px 15px 5px;
+            margin: 15px 15px 15px 10px;
             :hover{
                 opacity: 0.8;
             }
@@ -130,25 +130,19 @@
 
         &__center{
             display: none;
-
         }
 
         &__right a{
-            padding-right: 0px;
-            
-            
-        }
-        .settings{
-            margin-right: 5px;
+            padding-right: 5px;
         }
 
         &__left{
             padding-left: 5px;
         }
 
-        // .settings{
-        //     display: none;
-        // }
+        .settings{
+            display: none;
+        }
 
         .logo1{
             display: none;
