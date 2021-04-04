@@ -531,7 +531,7 @@ input {
 }
 
 .add_employee_form {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 850;
   left: 0;
