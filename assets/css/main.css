@@ -1021,8 +1021,9 @@ input {
 }
 
 .login {
-  background-color: var(--pure-black);
-  background: linear-gradient(to right, #2c2c2c, #050505);
+  background: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1030,10 +1031,18 @@ input {
   letter-spacing: 1px;
 }
 
+.login p {
+  padding: 10px 0 5px 0;
+}
+
 .login h1 {
-  font-weight: 500;
+  font-weight: 300;
   color: var(--pure-white);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.login #mark {
+  margin-bottom: 20px;
 }
 
 .login .box {
@@ -1042,6 +1051,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   font-weight: 500;
   border: 2px solid var(--pure-white);
