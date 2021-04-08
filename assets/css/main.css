@@ -2049,14 +2049,36 @@ input {
   background-color: var(--light-white);
 }
 
+.cleaning-rooms .table-row .start {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .cleaning-rooms .table-row .start-button {
+  text-align: center;
   background-color: var(--dark-caramel);
+  width: 145px;
   padding: 10px;
   font-weight: 500;
   color: var(--pure-white);
 }
 
 .cleaning-rooms .table-row .start-button:hover {
+  filter: brightness(0.9);
+}
+
+.cleaning-rooms .table-row .finish-button {
+  text-align: center;
+  background-color: var(--dark-grey-1);
+  width: 145px;
+  padding: 10px;
+  font-weight: 500;
+  color: var(--pure-white);
+}
+
+.cleaning-rooms .table-row .finish-button:hover {
   filter: brightness(0.9);
 }
 

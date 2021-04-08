@@ -57,10 +57,34 @@
             background-color: var(--light-white);
         }
 
+        .start{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .start-button{
+            text-align: center;
             background-color: var(--dark-caramel);
+            width: 145px;
             padding: 10px;
             font-weight: 500;
+           
+            color: var(--pure-white);
+
+            &:hover{
+                filter: brightness(0.9);
+            }
+        }
+
+        .finish-button{
+            text-align: center;
+            background-color: var(--dark-grey-1);
+            width: 145px;
+            padding: 10px;
+            font-weight: 500;
+           
             color: var(--pure-white);
 
             &:hover{
