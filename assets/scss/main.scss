@@ -1,4 +1,4 @@
-@import 'resets', 'variables', 'navbar', 'sidebar', 'dashboard', 'content', 'employees', 'rooms', 'reservations', 'emails', 'login', 'scrollbar', 'edit-employee', 'edit-room';
+@import 'resets', 'variables', 'navbar', 'sidebar', 'dashboard', 'content', 'employees', 'rooms', 'reservations', 'emails', 'login', 'scrollbar', 'edit-employee', 'edit-room', 'room-type', 'settings';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 
@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
     scrollbar-color: var(--dark-grey-2) var(--light-grey-2);
 }
+
 
 
 .settings_form{
@@ -124,10 +125,17 @@ body{
 
 @media (max-width: 600px){
     .sidebar{
+        width: 230px;
         position: fixed;
-        transform: translate(-220px, 0);
-        
+        transform: translate(-230px, 0);
+        .sidebar__options{
+            .mobile-only{
+                display: block;
+            }
+        }
     }
+   
+
     .settings_form{
         #modal_content{
             margin-top: 12vh;

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Contintental - Admin Panel</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <title>Continental - Admin Panel</title>
 </head>
 
 <body>
@@ -34,46 +35,11 @@
             <img src="assets/img/logo_continental_2.png" alt="logo">
         </div>
         <div class="nav__right">
-            <a href="#" class="settings"><i class="fas fa-cog"></i></a>
+            <a href="settings.html" class="settings"><i class="fas fa-cog"></i></a>
             <a href="index.html" class="logout"><i class="fas fa-sign-out-alt"></i></a>
         </div>
     </div>
 
-    <!-- SETTINGS FORM -->
-    <div class="settings_form">
-        <form action="dashboard.html" id="modal_content">
-            <h1 class="settings_header">ACCOUNT SETTINGS</h1>
-            <div class="element">
-                <label for="name">Full Name</label>
-                <input type="text" value="Alex Popescu" spellcheck="false" placeholder="" id="name" required>
-            </div>
-            <div class="element">
-                <label for="email">Email</label>
-                <input type="email" value="alex@continental.com" spellcheck="false" placeholder="" id="email" required>
-            </div>
-            <div class="element">
-                <label for="phone1">Phone Number</label>
-                <input type="tel" pattern="[\d\+]{10,15}" required value="0733747474" spellcheck="false" placeholder=""
-                    id="phone1">
-            </div>
-            <div class="element">
-                <label for="password1">Password</label>
-                <input type="password" spellcheck="false" placeholder="" id="password1" required>
-            </div>
-            <div class="element">
-                <label for="password2">New Password</label>
-                <input type="password" spellcheck="false" placeholder="" id="password2">
-            </div>
-            <div class="element">
-                <label for="password3">Repeat New Password</label>
-                <input type="password" spellcheck="false" placeholder="" id="password3">
-            </div>
-            <div class="settings_footer">
-                <button class="cancelBtn" form="">Cancel</button>
-                <button type="update" form="modal_content" value="Submit">Update</button>
-            </div>
-        </form>
-    </div>
 
     <!-- SIDEBAR -->
     <div class="sidebar">
@@ -110,6 +76,11 @@
                 <li>
                     <a href="emails.html">
                         <div class="selector"></div><i class="fas fa-envelope"></i>Emails
+                    </a>
+                </li>
+                <li class="mobile-only">
+                    <a href="settings.html">
+                        <div class="selector"></div><i class="fas fa-cog"></i>Settings
                     </a>
                 </li>
             </ul>
@@ -173,6 +144,46 @@
                     <div class="parameter center add"><button class="addRoomBtn"><i
                                 class="fas fa-plus-circle"></i></button></div>
                 </div>
+            </div>
+            <hr>
+            <div class="table-row">
+                <div class="value center user"><i class="fas fa-door-open"></i></div>
+                <div class="value  name">Room 0.0</div>
+                <div class="value">Single</div>
+                <div class="value">€20</div>
+                <div class="value">empty</div>
+                <div class="value center edit"><a href="edit-room.html" class="editRoomBtn"><i
+                            class="fas fa-pen"></i></a></div>
+            </div>
+            <hr>
+            <div class="table-row">
+                <div class="value center user"><i class="fas fa-door-open"></i></div>
+                <div class="value  name">Room 0.0</div>
+                <div class="value">Single</div>
+                <div class="value">€20</div>
+                <div class="value">empty</div>
+                <div class="value center edit"><a href="edit-room.html" class="editRoomBtn"><i
+                            class="fas fa-pen"></i></a></div>
+            </div>
+            <hr>
+            <div class="table-row">
+                <div class="value center user"><i class="fas fa-door-open"></i></div>
+                <div class="value  name">Room 0.0</div>
+                <div class="value">Single</div>
+                <div class="value">€20</div>
+                <div class="value">empty</div>
+                <div class="value center edit"><a href="edit-room.html" class="editRoomBtn"><i
+                            class="fas fa-pen"></i></a></div>
+            </div>
+            <hr>
+            <div class="table-row">
+                <div class="value center user"><i class="fas fa-door-open"></i></div>
+                <div class="value  name">Room 0.0</div>
+                <div class="value">Single</div>
+                <div class="value">€20</div>
+                <div class="value">empty</div>
+                <div class="value center edit"><a href="edit-room.html" class="editRoomBtn"><i
+                            class="fas fa-pen"></i></a></div>
             </div>
             <hr>
             <div class="table-row">

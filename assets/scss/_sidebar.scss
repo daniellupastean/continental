@@ -58,8 +58,14 @@
             padding: 0 15px 0 20px;
             //transition: color 0.2s;
         }
+
+        .mobile-only{
+            display: none;
+        }
+
         li{
             display: flex;
+
             a{
                 height: 50px;
                 display: flex;
@@ -90,6 +96,22 @@
             }
         }
     
+    }
+
+    @media (max-height: 600px){
+        padding: 76px 0 10px 0;
+
+        img{
+            width: 40%;
+        }
+        
+        &__options{
+            padding-top: 0;
+        }
+
+        &__admin__details{
+            padding: 25px 0 15px 0;
+        }
     }
    
 

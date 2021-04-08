@@ -1,11 +1,9 @@
 .login{
-    // background: var(--pure-black);
-    // background: linear-gradient(to right, #1a120c, #000000);
     // background-color: var(--pure-black);
     // background: linear-gradient(to right, #2c2c2c, #050505);
 
     background: url("../img/background.jpg");
-    background-size:cover;
+    background-size: cover;
     background-position: center;
 
     display: flex;
@@ -50,7 +48,6 @@
             margin-top: 15px;
             outline: none;
             width: 340px;
-            // border-radius: 10px;
             background: none;
             font-size: 18px;
             color: var(--pure-white);
@@ -63,7 +60,6 @@
             outline: none;
             letter-spacing: 1px;
             border: none;
-            // border-radius: 10px;
             margin-top: 20px;
             padding: 10px;
             cursor: pointer;

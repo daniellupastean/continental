@@ -67,7 +67,7 @@
                         <div class="selector"></div><i class="fas fa-door-open"></i>Rooms
                     </a>
                 </li>
-                <li class="actual">
+                <li>
                     <a href="reservations.html">
                         <div class="selector"></div><i class="far fa-calendar-alt"></i>Reservations
                     </a>
@@ -86,89 +86,55 @@
         </div>
     </div>
 
-    <!-- CONTENT RESERVATIONS START-->
-
+    <!-- CONTENT EDIT-ROOM START-->
     <div class="content">
-        <div class="reservations">
-            <div class="header">
-                <div class="label">RESERVATIONS DETAILS</div>
-                <hr>
-                <div class="table-header">
-                    <div class="parameter center"></div>
-                    <div class="parameter">NAME</div>
-                    <div class="parameter">ROOM</div>
-                    <div class="parameter">PRICE</div>
-                    <div class="parameter">DATE</div>
-                </div>
-            </div>
-            <hr>
 
-            <div class="table-row">
-                <div class="value center user"><i class="far fa-calendar-check"></i></div>
-                <div class="value  name">Andrei Bogdan</div>
-                <div class="value">Room 2.1</div>
-                <div class="value">€150</div>
-                <div class="value short">01.05.2021 - 02.05.2021</div>
-            </div>
-            <hr>
-            <div class="table-row">
-                <div class="value center user"><i class="far fa-calendar-check"></i></div>
-                <div class="value  name">Andrei Bogdan</div>
-                <div class="value">Room 2.1</div>
-                <div class="value">€150</div>
-                <div class="value short">01.05.2021 - 02.05.2021</div>
-            </div>
-            <hr>
-            <div class="table-row">
-                <div class="value center user"><i class="far fa-calendar-check"></i></div>
-                <div class="value  name">Andrei Bogdan</div>
-                <div class="value">Room 2.1</div>
-                <div class="value">€150</div>
-                <div class="value short">01.05.2021 - 02.05.2021</div>
-            </div>
-            <hr>
-            <div class="table-row">
-                <div class="value center user"><i class="far fa-calendar-check"></i></div>
-                <div class="value  name">Andrei Bogdan</div>
-                <div class="value">Room 2.1</div>
-                <div class="value">€150</div>
-                <div class="value short">01.05.2021 - 02.05.2021</div>
-            </div>
-            <hr>
-            <div class="table-row">
-                <div class="value center user"><i class="far fa-calendar-check"></i></div>
-                <div class="value  name">Andrei Bogdan</div>
-                <div class="value">Room 2.1</div>
-                <div class="value">€150</div>
-                <div class="value short">01.05.2021 - 02.05.2021</div>
-            </div>
-            <hr>
-            <div class="table-row">
-                <div class="value center user"><i class="far fa-calendar-check"></i></div>
-                <div class="value  name">Andrei Bogdan</div>
-                <div class="value">Room 2.1</div>
-                <div class="value">€150</div>
-                <div class="value short">01.05.2021 - 02.05.2021</div>
-            </div>
-            <hr>
-            <div class="table-row">
-                <div class="value center user"><i class="far fa-calendar-check"></i></div>
-                <div class="value  name">Andrei Bogdan</div>
-                <div class="value">Room 2.1</div>
-                <div class="value">€150</div>
-                <div class="value short">01.05.2021 - 02.05.2021</div>
-            </div>
-            <hr>
+        <!-- EDIT ROOM FORM -->
 
-        </div>
-
+        <form action="#" id="room-type">
+            <h1 class="edit_room_header">ADD ROOM TYPE</h1>
+            <hr>
+            <div class="element">
+                <label for="namer">Name</label>
+                <input type="text" value="" spellcheck="false" placeholder="" id="namer" required>
+            </div>
+            <div class="element">
+                <label for="price-night">Price/Night (€)</label>
+                <input type="text" pattern="[\d\.]{2,6}" value="" spellcheck="false" placeholder="" id="price-night"
+                    required>
+            </div>
+            <div class="element">
+                <label for="size">Size (m<sup>2</sup>)</label>
+                <input type="text" pattern="[\d\.]{1,6}" value="" spellcheck="false" placeholder="" id="size" required>
+            </div>
+            <div class="element">
+                <label for="guests">Guests</label>
+                <input type="text" pattern="[\d]{1,6}" value="" spellcheck="false" placeholder="" id="guests" required>
+            </div>
+            <div class="element">
+                <label for="s-description">Small Description</label>
+                <textarea id="s-description" class="textarea" placeholder="Write a small description here..."
+                    spellcheck="false"></textarea>
+            </div>
+            <div class="element">
+                <label for="description">Description</label>
+                <textarea id="description" class="textarea" placeholder="Write description here..."
+                    spellcheck="false"></textarea>
+            </div>
+            <hr>
+            <div class="edit_room_footer">
+                <!-- <button class="cancelBtn2" form="">Cancel</button> -->
+                <button type="submit" form="room-type">Add</button>
+            </div>
+        </form>
         <footer>Continental &copy; 2021</footer>
     </div>
 
-    <!-- CONTENT RESERVATIONS END -->
+    <!-- CONTENT EDIT-ROOM END -->
 
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/employees.js"></script>
 </body>
 
 </html>
