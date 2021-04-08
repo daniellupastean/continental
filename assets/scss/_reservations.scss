@@ -48,7 +48,7 @@
         color: var(--dark-grey-2);
         align-items: center;
 
-        &:nth-last-of-type(even){
+        &:nth-of-type(odd){
             background-color: var(--light-white);
         }
 
@@ -115,6 +115,14 @@
             grid-template-columns: 1fr;
             text-align: center;
             line-height: 1.4;
+
+            &:nth-of-type(odd){
+                background-color: var(--pure-white);
+            }
+
+            &:nth-of-type(even){
+                background-color: var(--light-white);
+            }
         }
     }
 

@@ -48,7 +48,7 @@
         color: var(--dark-grey-2);
         align-items: center;
 
-        &:nth-last-of-type(even){
+        &:nth-of-type(odd){
             background-color: var(--light-white);
         }
     }
@@ -113,9 +113,13 @@
             text-align: center;
             line-height: 1.4;
 
-            // .editRoomBtn{
-            //     display: none;
-            // }
+            &:nth-of-type(odd){
+                background-color: var(--pure-white);
+            }
+
+            &:nth-of-type(even){
+                background-color: var(--light-white);
+            }
         }
     }
 
